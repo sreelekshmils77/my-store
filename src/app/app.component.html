@@ -1,10 +1,13 @@
 <app-header></app-header>
 <div class="container wrapper col-9">
-  <app-search></app-search>
+  <!-- <app-product-list></app-product-list> -->
+<router-outlet></router-outlet>
+
+  <!-- <app-search></app-search>
   <div class="row parts">
-    <app-products class="col-4"></app-products>
-    <app-products class="col-4"></app-products>
-    <app-products class="col-4"></app-products>
+    <app-products *ngFor="let item of products" [product]="item" class="col-4"></app-products> -->
+    <!-- <app-products [product]="products[1]" class="col-4"></app-products> -->
+    <!-- <app-products [product]="products[2]" class="col-4"></app-products>  -->
 
     <!-- <div class="col-4">
       <div class="card">
@@ -17,67 +20,8 @@
         </div>
       </div>
     </div> -->
-    <!-- <div class="col-4">
-      <div class="card">
-        <img src="assets/naruto.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-4">
-      <div class="card">
-        <img src="assets/scene.jfif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div> -->
-  </div>
-  <div class="row parts">
-      <app-products class="col-4"></app-products>
-      <app-products class="col-4"></app-products>
-      <app-products class="col-4"></app-products>
-
-    <!-- <div class="col-4">
-      <div class="card">
-        <img src="assets/cake.jfif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-4">
-      <div class="card">
-        <img src="assets/flower.jfif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-4">
-      <div class="card">
-        <img src="assets/noodles.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div> -->
-  </div>
+  <!-- </div> -->
+  <!-- <div class="row parts"> -->
+  <!-- </div> -->
 </div>
-<app-footer></app-footer>
+<app-footer></app-footer> 
