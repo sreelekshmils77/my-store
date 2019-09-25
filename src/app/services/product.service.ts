@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../models/Products';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -33,13 +34,18 @@ export class ProductService {
     //     isAvailable: true
     //   }
   ];
+  // private baseUrl = `http://localhost:3000/`;
   constructor(
     private httpClient: HttpClient
   ) { }
   getProducts() {
-    return this.httpClient.get('http://localhost:3000/product');
-    // return this.products;
+    // return this.httpClient.get(environment.baseUrl + 'product');
+    return this.httpClient.get(`${environment.baseUrl}product`);
 
+    // return this.products;
+  }
+  getProduct(productId) {
+    return this.httpClient.get(environment.baseUrl + 'product/' + productId);
   }
 
 }

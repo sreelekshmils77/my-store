@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { AddItemsComponent } from './add-items/add-items.component';
 // import { ResultsComponent } from './results/results.component';
 // import { ProductService } from './services/product.service';
 
@@ -25,6 +26,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
     ProductListComponent,
     ProductDetailsComponent,
     CheckoutComponent,
+    AddItemsComponent,
     // ResultsComponent,
     // ProductService
   ],

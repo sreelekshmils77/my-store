@@ -3,10 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { AddItemsComponent } from './add-items/add-items.component';
 // import { CommonModule } from '@angular/common';
 
 const routes: Routes = [{
   path: '',
+  component: ProductListComponent
+},
+{
+  path: 'product',
   component: ProductListComponent
 },
 {
@@ -16,6 +21,10 @@ const routes: Routes = [{
 {
   path: 'checkout',
   component: CheckoutComponent
+},
+{
+  path: 'additems',
+  component: AddItemsComponent
 },
 {
   path: '**',

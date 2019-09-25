@@ -9,14 +9,19 @@ import { ProductService } from '../services/product.service';
 })
 export class ProductListComponent implements OnInit {
   products: Product[] = [];
+  show: 'Show search term here';
   constructor(private productService: ProductService) {
     // this.products = this.productService.getProducts();
 
-     this.productService.getProducts().subscribe((res: Product[]) => {
-       this.products = res;
-     });
-    }
-  ngOnInit() {
+    this.productService.getProducts().subscribe((res: Product[]) => {
+      this.products = res;
+    });
+  }
+  ngOnInit() { }
+  newPushMessage(message) {
+    console.log(message);
+    this.show = message;
+
   }
 
 }
